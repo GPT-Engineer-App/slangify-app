@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 
-export default function Home() {
+export default function Navbar() {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-4">Welcome to the Slang Term App</h1>
-      <p className="mb-4">Stay updated with the latest teenage slang terms.</p>
-      <nav>
-        <ul className="flex space-x-4">
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto">
+        <ul className="flex space-x-4 text-white">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
           <li>
             <Link href="/trending">Trending Terms</Link>
           </li>
@@ -19,7 +20,7 @@ export default function Home() {
             <Link href="/profile">User Profile</Link>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
