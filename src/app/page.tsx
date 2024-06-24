@@ -11,13 +11,19 @@ const Home = () => {
       <nav>
         <ul className="flex space-x-4">
           <li>
-            <Link href="/trending" className="text-blue-500">Trending Terms</Link>
+            <Link href="/trending">
+              <a className="text-blue-500">Trending Terms</a>
+            </Link>
           </li>
           <li>
-            <Link href="/search" className="text-blue-500">Search</Link>
+            <Link href="/search">
+              <a className="text-blue-500">Search</a>
+            </Link>
           </li>
           <li>
-            <Link href="/profile" className="text-blue-500">User Profile</Link>
+            <Link href="/profile">
+              <a className="text-blue-500">User Profile</a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -9,16 +9,24 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4">
       <ul className="flex space-x-4">
         <li>
-          <Link href="/" className="text-white">Home</Link>
+          <Link href="/">
+            <a className="text-white">Home</a>
+          </Link>
         </li>
         <li>
-          <Link href="/trending" className="text-white">Trending Terms</Link>
+          <Link href="/trending">
+            <a className="text-white">Trending Terms</a>
+          </Link>
         </li>
         <li>
-          <Link href="/search" className="text-white">Search</Link>
+          <Link href="/search">
+            <a className="text-white">Search</a>
+          </Link>
         </li>
         <li>
-          <Link href="/profile" className="text-white">User Profile</Link>
+          <Link href="/profile">
+            <a className="text-white">User Profile</a>
+          </Link>
         </li>
       </ul>
     </nav>
